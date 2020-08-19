@@ -19,8 +19,10 @@ def remove_strawberry(contacts)
     if key == "Freddy Mercury"
       data.each do |key, data|
         if key == :favorite_ice_cream_flavors
-          data.each do |flavor|
+          data.delete('strawberry')
+        end
       end
     end
   end
+  contacts
 end
